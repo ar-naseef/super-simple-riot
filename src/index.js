@@ -4,8 +4,7 @@ import './tags/hello-world.tag';
 import './tags/footer-tag.tag';
 
 const opts = {
-    name: 'hi',
-    sdf: 'sdf32'
+    name: 'hi'
 };
 
 
