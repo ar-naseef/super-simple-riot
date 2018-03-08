@@ -1,24 +1,29 @@
 <inpt-tag>
-    <h3>Start typing {opts.curr} to convert to USD</h3>
-
-    <input name="nice" id="inr" value="" onkeyup={changeTxt}>
-    
-
-    <show-usd></show-usd>
+    <h4>Start typing {opts.curr} to convert to USD</h4>
     <script>
-        this.changeTxt = function() {
-            fetch('https://api.fixer.io/latest').then((res)=>{
+        fetch('https://api.fixer.io/latest').then((res)=>{
                 return res.json();
             }).then((data)=>{
                 //console.log(data.date);
-                this.inrVal = res.rates.INR;
-                this.usdVal = res.rates.USD;
+                this.toVal = data.rates[opts.curr];
+                this.usdVal = data.rates.USD;
             }).catch((err) => {
                 console.log(err);
             });
-            this.inr = Number(document.getElementById('inr').value)
-            console.log(this);
+    </script>
+    <input name="nice" id="inp" value="" onkeyup={changeTxt}>
+    <p style=
+        "display: inline-block;
+        width: 40px;
+        text-align: right;" >{opts.curr}</p>
+    
+    <script>
+        this.changeTxt = function() {
+            this.inp = Number(document.getElementById('inp').value)
+            this.res = Number((this.usdVal / this.toVal) * this.inp)
+            // console.log(this);
         }
         console.log("footer tag");
     </script>
+    <show-usd show={this.res} res={this.res}></show-usd>
 </inpt-tag>
