@@ -5,7 +5,7 @@ import './tags/inpt-tag.tag';
 import './tags/show-usd.tag';
 
 const opts = {
-    curr: 'INR'
+    curr: 'INR' // ["AUD","BGN","BRL","CAD","CHF","CNY","CZK","DKK","GBP","HKD","HRK","HUF","IDR","ILS","INR","ISK","JPY","KRW","MXN","MYR","NOK","NZD","PHP","PLN","RON","RUB","SEK","SGD","THB","TRY","USD","ZAR"]
 };
 
 
