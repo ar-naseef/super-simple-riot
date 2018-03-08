@@ -1,12 +1,12 @@
 import riot from 'riot';
 import 'riot-hot-reload';
-import './tags/hello-world.tag';
-import './tags/footer-tag.tag';
+import './tags/heading.tag';
+import './tags/inpt-tag.tag';
 
 const opts = {
-    name: 'hi'
+    curr: 'INR'
 };
 
 
-riot.mount('hello-world', opts);
-riot.mount('footer-tag');
+riot.mount('heading', opts);
+//riot.mount('inpt-tag');
