@@ -1,3 +1,4 @@
-# super-simple-riot single page app that converts currency.
+# super-simple-riot 
+### a single page app that converts currency.
 
 todo -> implement the same with redux
