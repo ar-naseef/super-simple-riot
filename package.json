@@ -17,7 +17,7 @@
     "riot-hot-reload": "^1.0.0",
     "riot-tag-loader": "^2.0.2",
     "webpack": "^4.1.0",
-    "webpack-cli": "^2.0.10",
+    "webpack-cli": "^5.0.1",
     "webpack-dev-server": "^3.1.0"
   },
   "dependencies": {
